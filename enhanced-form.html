@@ -1,0 +1,161 @@
+<!DOCTYPE html> <!-- Declares that this is an HTML5 document -->
+<html lang="en"> <!-- Root HTML element, language set to English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for special characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page responsive on all devices -->
+    <title>Enhanced HTML5 Content & Form</title> <!-- Title displayed in browser tab -->
+</head>
+
+<body>
+    <!-- ===== SECTION 1: PAGE HEADING ===== -->
+    <h1>Welcome to My HTML5 Showcase</h1> <!-- Main heading of the page -->
+
+    <!-- ===== SECTION 2: LISTS ===== -->
+    <section>
+        <h2>My Favorite Programming Languages</h2> <!-- Section heading -->
+        
+        <!-- Unordered list (bullet points) -->
+        <ul>
+            <li>Python</li> <!-- First list item -->
+            <li>JavaScript</li> <!-- Second list item -->
+            <li>HTML & CSS</li> <!-- Third list item -->
+        </ul>
+
+        <h2>Steps to Build a Website</h2> <!-- Another heading -->
+        
+        <!-- Ordered list (numbered) -->
+        <ol>
+            <li>Plan the layout and design</li>
+            <li>Write the HTML structure</li>
+            <li>Style with CSS</li>
+            <li>Add functionality with JavaScript</li>
+        </ol>
+    </section>
+
+    <!-- ===== SECTION 3: TABLE ===== -->
+    <section>
+        <h2>Web Development Skills Table</h2> <!-- Table heading -->
+        
+        <!-- Table element -->
+        <table border="1"> <!-- 'border="1"' adds a border (basic example) -->
+            <thead> <!-- Table header section -->
+                <tr> <!-- Table row -->
+                    <th>Skill</th> <!-- Header cell -->
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Table body section -->
+                <tr>
+                    <td>HTML5</td> <!-- Table data cell -->
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ===== SECTION 4: MEDIA ===== -->
+    <section>
+        <h2>My Favorite Song, video & Image</h2>
+        
+        <!-- Image element -->
+        <img src="https://media.istockphoto.com/id/115638767/photo/studio-setup-4-with-video-camera.jpg?s=1024x1024&w=is&k=20&c=fyy4ZgaukE7xeFu2_N_57P7b4UzVqcsbjKHscs60O3M=" alt="Studio setup with lights and camera" width="300"> <!-- Displays an image with alt text for accessibility -->
+
+        <!-- Audio element with controls -->
+        <audio controls>
+            <source src="song.mp3" type="audio/mpeg"> <!-- MP3 audio source -->
+            Your browser does not support the audio element. <!-- Fallback text -->
+        </audio>
+
+        <!-- Video element with controls -->
+        <video width="320" height="240" controls>
+            <source src="https://cdn.pixabay.com/video/2023/10/21/185947-876963225_large.mp4" type="video/mp4"> <!-- MP4 video source -->
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- ===== SECTION 5: FORM ===== -->
+    <section>
+        <h2>Contact Form</h2>
+
+        <!-- Form element -->
+        <form action="#" method="post"> <!-- 'action' is where form data will be sent -->
+            
+            <!-- Fieldset groups related inputs -->
+            <fieldset>
+                <legend>Personal Information</legend> <!-- Title for the fieldset -->
+
+                <!-- Label links text to input for accessibility -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <!-- 'placeholder' shows hint, 'required' forces input -->
+
+                <br><br> <!-- Line breaks for spacing -->
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <!-- 'type="email"' ensures proper email format -->
+
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+                <!-- 'minlength' enforces at least 6 characters -->
+            </fieldset>
+
+            <br>
+
+            <!-- Second fieldset -->
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="language">Favorite Language:</label>
+                <!-- Drop-down menu -->
+                <select id="language" name="language" required>
+                    <option value="">--Select--</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML & CSS</option>
+                </select>
+
+                <br><br>
+
+                <!-- Radio buttons -->
+                <p>Preferred Contact Method:</p>
+                <input type="radio" id="email_contact" name="contact_method" value="email" required>
+                <label for="email_contact">Email</label>
+
+                <input type="radio" id="phone_contact" name="contact_method" value="phone">
+                <label for="phone_contact">Phone</label>
+
+                <br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+                <!-- Checkbox for optional newsletter subscription -->
+                
+                <br><br>
+                <!-- Textarea for additional comments -->
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here..."></textarea>
+                <!-- 'rows' and 'cols' set the size of the textarea -->
+            </fieldset>
+
+            <br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+</body>
+
+</html>
